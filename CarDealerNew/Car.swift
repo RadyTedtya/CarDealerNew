@@ -19,6 +19,8 @@ struct Car: Identifiable, Decodable {
     let thumbnailName: String
     let type: CarType
     
+    static let DummyCar: Car = .init(name: "", locations: "", imageName: "", thumbnailName: "", type: CarType.electric)
+    
 }
 
 enum CarType: String, Decodable, Identifiable, CaseIterable {

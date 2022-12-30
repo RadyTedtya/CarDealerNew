@@ -13,8 +13,12 @@ struct AddNewCar: View {
     
     
     @ObservedObject var carModel: CarModel
-    @State private var textArea: String = ""
-    @State private var carName: String = ""
+    @State public var textArea: String = ""
+    @State public var carName: String = ""
+    @State public var image: String = ""
+    @State public var location: String = ""
+    @State public var thumbNail: String = ""
+    @State public var selectedType: CarType = .petrol
     
     var body: some View {
         NavigationView {
@@ -31,15 +35,14 @@ struct AddNewCar: View {
                     
                     
                 
-                Picker("Car Type", selection: $carModel.selectedCarType){
-                    ForEach(CarType.allCases) {
+//                Picker("Car Type", selection: $carModel.selectedCarType){
+                Picker("Car Type", selection: $selectedType){
+                    ForEach(CarType.allCases.filter { $0 != .all } ) {
                         Text($0.rawValue.capitalized).tag($0)
                     }
                 }
                 .foregroundColor(Color.black)
                 .pickerStyle(.wheel)
-                
-                
                 
                 TextEditor(text: $textArea)
                     .padding()
@@ -57,25 +60,13 @@ struct AddNewCar: View {
             }
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-//            Spacer()
-            
-                
-            
-                
-            
         }
         .navigationTitle("Add New Car")
         .navigationBarItems(trailing:
         Button(action: {
-            carModel.add(car: carModel.cars.first!)
+//            carModel.add(car: carModel.cars.first!)
+            let newCar = Car(name: carName, locations: location, imageName: image, thumbnailName: thumbNail, type: selectedType)
+            carModel.add(car: newCar)
         }) {
             Text("Add Car")
         })

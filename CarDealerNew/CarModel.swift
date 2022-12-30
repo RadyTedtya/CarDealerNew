@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 class CarModel : ObservableObject {
     @Published private(set) var cars : [Car] = []
+    @Published var favoriteCars : [Car] = []
     @Published var selectedCarType: CarType = .all
     
     init() {
@@ -21,11 +23,11 @@ class CarModel : ObservableObject {
             }
         }
     }
-     
+    
     func cars(forType type: CarType) -> [Car] {
         return cars.filter { $0.type == type }
     }
-     
+    
     func add(car: Car){
         cars.append(car)
     }

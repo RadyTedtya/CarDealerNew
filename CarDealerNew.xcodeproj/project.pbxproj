@@ -21,6 +21,7 @@
 		D301A4FC295D55DE00A8DF6F /* CarResources in Resources */ = {isa = PBXBuildFile; fileRef = D301A4FB295D55DE00A8DF6F /* CarResources */; };
 		D301A4FE295D576C00A8DF6F /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D301A4FD295D576C00A8DF6F /* CarModel.swift */; };
 		D301A500295D775D00A8DF6F /* AddNewCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D301A4FF295D775D00A8DF6F /* AddNewCar.swift */; };
+		D301A502295EA84F00A8DF6F /* CarDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D301A501295EA84F00A8DF6F /* CarDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		D301A4FB295D55DE00A8DF6F /* CarResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CarResources; sourceTree = "<group>"; };
 		D301A4FD295D576C00A8DF6F /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
 		D301A4FF295D775D00A8DF6F /* AddNewCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCar.swift; sourceTree = "<group>"; };
+		D301A501295EA84F00A8DF6F /* CarDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				D301A4FF295D775D00A8DF6F /* AddNewCar.swift */,
 				D301A4FD295D576C00A8DF6F /* CarModel.swift */,
+				D301A501295EA84F00A8DF6F /* CarDetail.swift */,
 				D301A4F9295D54DD00A8DF6F /* Car.swift */,
 				D301A4C5295C398A00A8DF6F /* CarDealerNewApp.swift */,
 				D301A4C7295C398A00A8DF6F /* ContentView.swift */,
@@ -283,6 +286,7 @@
 				D301A4C8295C398A00A8DF6F /* ContentView.swift in Sources */,
 				D301A4F2295C39DA00A8DF6F /* Favorite.swift in Sources */,
 				D301A500295D775D00A8DF6F /* AddNewCar.swift in Sources */,
+				D301A502295EA84F00A8DF6F /* CarDetail.swift in Sources */,
 				D301A4FE295D576C00A8DF6F /* CarModel.swift in Sources */,
 				D301A4FA295D54DD00A8DF6F /* Car.swift in Sources */,
 				D301A4F0295C39D100A8DF6F /* Manufacture.swift in Sources */,

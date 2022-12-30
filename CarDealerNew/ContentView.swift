@@ -13,14 +13,14 @@ struct ContentView: View {
     
     var body: some View {
       
-        TabView{
-//            Manufacture(cars: CarModel.cars())
+        TabView {
+
             Manufacture(carModel: carModel)
                 .tabItem{
                     Label("Manufacture", systemImage: "list.bullet")
                 }
             
-            Favorite()
+            Favorite(carModel: carModel)
                 .tabItem{
                     Label("Favorite", systemImage: "star.fill")
                 }
@@ -30,9 +30,9 @@ struct ContentView: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//
-//    static var previews: some View {
-//        ContentView(cars: cars)
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        ContentView(carModel: .init())
+    }
+}
