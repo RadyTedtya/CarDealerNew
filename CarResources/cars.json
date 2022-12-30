@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Toyota",
+        "locations": "Chatswood, Parramatta, Castle Hill, Newtown",
+        "imageName": "toyota",
+        "thumbnailName": "toyota",
+        "type": "petrol"
+    },
+    {
+        "name": "Tesla",
+        "locations": "Frankston, Glen Waverley, Castle Hill, Caufield",
+        "imageName": "tesla",
+        "thumbnailName": "tesla",
+        "type": "electric"
+    },
+    {
+        "name": "Mitsubishi",
+        "locations": "Chadstone, Flinder Street, Ringwood, Hallam",
+        "imageName": "mitsubishi",
+        "thumbnailName": "mitsubishi",
+        "type": "diesel"
+    },
+    {
+        "name": "Mazda",
+        "locations": "Dandenong, Springvale, Burwood, Don Caster",
+        "imageName": "mazda",
+        "thumbnailName": "mazda",
+        "type": "petrol"
+    },
+    {
+        "name": "Mercedes",
+        "locations": "Keysborough, Clayton, St Kilda, Newtown",
+        "imageName": "mercedes",
+        "thumbnailName": "mercedes",
+        "type": "petrol"
+    },
+    {
+        "name": "Holden",
+        "locations": "Chatswood, Noble Park, Mornington, Oakleigh",
+        "imageName": "holden",
+        "thumbnailName": "holden",
+        "type": "diesel"
+    },
+    {
+        "name": "BMW",
+        "locations": "Caufield, Edenwood, Castle Hill, Sandown Park",
+        "imageName": "bmw",
+        "thumbnailName": "bmw",
+        "type": "diesel"
+    },
+    {
+        "name": "Audi",
+        "locations": "Springvale, Noble Park, Mornington, Keysborough",
+        "imageName": "audi",
+        "thumbnailName": "audi",
+        "type": "petrol"
+    },
+    {
+        "name": "Wolswagen",
+        "locations": "Dandenong, Frankston, Edenwood, Ringwood",
+        "imageName": "wolswagen",
+        "thumbnailName": "wolswagen",
+        "type": "electric"
+    }
+    
+]

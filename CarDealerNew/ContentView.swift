@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var carModel: CarModel = .init()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+      
+        TabView{
+//            Manufacture(cars: CarModel.cars())
+            Manufacture(carModel: carModel)
+                .tabItem{
+                    Label("Manufacture", systemImage: "list.bullet")
+                }
+            
+            Favorite()
+                .tabItem{
+                    Label("Favorite", systemImage: "star.fill")
+                }
+        }
+        
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        ContentView(cars: cars)
+//    }
+//}
