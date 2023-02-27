@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Car: Identifiable, Decodable {
     
@@ -29,9 +30,11 @@ enum CarType: String, Decodable, Identifiable, CaseIterable {
     case petrol
     case diesel
     
-    var id: String {
-        return rawValue
+    var id: Self {
+        return self
     }
 }
+
+
 
 

@@ -30,6 +30,7 @@ struct Manufacture: View {
                     }
                 }
                 .pickerStyle(.segmented)
+                .frame(maxWidth: .infinity)
                 
                 ScrollView{
                     ForEach(dataSource) { eachCar in
@@ -71,9 +72,6 @@ struct CarRow: View {
             .padding(.horizontal)
     }
 }
-
-
-
 
 struct Manufacture_Preview: PreviewProvider {
     static var previews: some View {

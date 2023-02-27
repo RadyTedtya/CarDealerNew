@@ -11,8 +11,6 @@ import SwiftUI
 
 
 struct CarDetail: View {
-    
-    
     let car: Car
     @ObservedObject var carModel: CarModel
     @State var carLocation: String = ""
@@ -23,7 +21,6 @@ struct CarDetail: View {
             VStack {
                 Image(car.imageName)
                     .resizable()
-    //                .frame(maxWidth: .infinity)
                     .frame(width: 300 ,height: 150)
                 
                 Text("Car Model: " + car.name)

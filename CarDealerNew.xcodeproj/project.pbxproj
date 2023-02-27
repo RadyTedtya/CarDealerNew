@@ -114,11 +114,11 @@
 			children = (
 				D301A4FF295D775D00A8DF6F /* AddNewCar.swift */,
 				D301A4FD295D576C00A8DF6F /* CarModel.swift */,
+				D301A4EF295C39D100A8DF6F /* Manufacture.swift */,
 				D301A501295EA84F00A8DF6F /* CarDetail.swift */,
 				D301A4F9295D54DD00A8DF6F /* Car.swift */,
 				D301A4C5295C398A00A8DF6F /* CarDealerNewApp.swift */,
 				D301A4C7295C398A00A8DF6F /* ContentView.swift */,
-				D301A4EF295C39D100A8DF6F /* Manufacture.swift */,
 				D301A4F1295C39DA00A8DF6F /* Favorite.swift */,
 				D301A4C9295C398B00A8DF6F /* Assets.xcassets */,
 				D301A4CB295C398B00A8DF6F /* Preview Content */,

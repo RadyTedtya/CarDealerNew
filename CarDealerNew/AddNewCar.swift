@@ -33,9 +33,6 @@ struct AddNewCar: View {
                     .foregroundColor(Color.gray)
                     .padding()
                     
-                    
-                
-//                Picker("Car Type", selection: $carModel.selectedCarType){
                 Picker("Car Type", selection: $selectedType){
                     ForEach(CarType.allCases.filter { $0 != .all } ) {
                         Text($0.rawValue.capitalized).tag($0)
@@ -64,7 +61,6 @@ struct AddNewCar: View {
         .navigationTitle("Add New Car")
         .navigationBarItems(trailing:
         Button(action: {
-//            carModel.add(car: carModel.cars.first!)
             let newCar = Car(name: carName, locations: location, imageName: image, thumbnailName: thumbNail, type: selectedType)
             carModel.add(car: newCar)
         }) {
